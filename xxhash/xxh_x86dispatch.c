@@ -47,6 +47,7 @@
  * @defgroup dispatch x86 Dispatcher
  * @{
  */
+#pragma once
 
 #if defined (__cplusplus)
 extern "C" {

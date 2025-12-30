@@ -240,6 +240,7 @@
  * @file xxhash.h
  * xxHash prototypes and implementation
  */
+#pragma once
 
 #if defined(__cplusplus) && !defined(XXH_NO_EXTERNC_GUARD)
 extern "C" {

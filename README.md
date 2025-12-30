@@ -19,6 +19,52 @@ Additional tests, which evaluate more thoroughly speed and collision properties 
 |release     | [![Build Status](https://github.com/Cyan4973/xxHash/actions/workflows/ci.yml/badge.svg?branch=release)](https://github.com/Cyan4973/xxHash/actions?query=branch%3Arelease+) |
 |dev         | [![Build Status](https://github.com/Cyan4973/xxHash/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/Cyan4973/xxHash/actions?query=branch%3Adev+) |
 
+<br>
+
+Installation
+-------------------------
+
+Run:
+
+```sh
+$ npm i xxhash.c
+```
+
+And then include `xxhash.h` as follows:
+
+```c
+// main.c
+#define XXHASH_IMPLEMENTATION  // or, XXH_IMPLEMENTATION
+#include "node_modules/xxhash.c/xxhash.h"
+
+int main() { /* ... */ }
+```
+
+And then compile with `clang` or `gcc` as usual.
+
+```bash
+$ clang main.c  # or, use gcc
+$ gcc   main.c
+```
+
+You may also use a simpler approach:
+
+```c
+// main.c
+#define XXHASH_IMPLEMENTATION  // or, XXH_IMPLEMENTATION
+#include <xxhash.h>
+
+int main() { /* ... */ }
+```
+
+If you add the path `node_modules/xxhash.c` to your compiler's include paths.
+
+```bash
+$ clang -I./node_modules/xxhash.c main.c  # or, use gcc
+$ gcc   -I./node_modules/xxhash.c main.c
+```
+
+<br>
 
 Benchmarks
 -------------------------
@@ -69,6 +115,8 @@ which can be observed in the following graph:
 
 For a more detailed analysis, please visit the wiki :
 https://github.com/Cyan4973/xxHash/wiki/Performance-comparison#benchmarks-concentrating-on-small-data-
+
+<br>
 
 Quality
 -------------------------

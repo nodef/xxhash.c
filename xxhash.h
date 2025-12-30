@@ -1,9 +1,9 @@
 #pragma once
 #if defined(XXHASH_IMPLEMENTATION) || defined(XXH_IMPLEMENTATION)
-#include "xxhash.c"
-#include "xxh_x86dispatch.h"
-#include "xxh_x86dispatch.c"
+#include "xxhash/xxhash.c"
+// #include "xxhash/xxh_x86dispatch.h"
+// #include "xxhash/xxh_x86dispatch.c"
 #else
-#include "xxhash.h"
-#include "xxh_x86dispatch.h"
+#include "xxhash/xxhash.h"
+// #include "xxhash/xxh_x86dispatch.h"
 #endif

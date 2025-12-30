@@ -50,6 +50,7 @@
  */
 
 /* Simulate the same impact as including the old xxh3.h source file */
+#pragma once
 
 #define XXH_INLINE_ALL
 #include "xxhash.h"
