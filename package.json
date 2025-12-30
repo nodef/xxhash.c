@@ -1,0 +1,26 @@
+{
+  "name": "xxhash.c",
+  "version": "1.2025.12",
+  "description": "Extremely fast non-cryptographic hash algorithm; Yann Collet (2012).",
+  "keywords": [
+    "c",
+    "library",
+    "hash",
+    "xxhash",
+    "non-cryptographic"
+  ],
+  "homepage": "https://github.com/nodef/xxhash.c#readme",
+  "bugs": {
+    "url": "https://github.com/nodef/xxhash.c/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/xxhash.c.git"
+  },
+  "license": "BSD-2-Clause",
+  "author": "wolfram77@gmail.com",
+  "main": "xxhash.h",
+  "scripts": {
+    "test": "bash build.sh test"
+  }
+}
