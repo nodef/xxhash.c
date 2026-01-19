@@ -1,6 +1,6 @@
 {
   "name": "xxhash.c",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "Extremely fast non-cryptographic hash algorithm; Yann Collet (2012).",
   "keywords": [
     "c",
